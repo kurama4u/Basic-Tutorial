@@ -1,0 +1,63 @@
+body{
+    width: 1100px;
+    height: 500px;
+}
+
+.dota-slider{
+    overflow: hidden;
+}
+
+.dota-slider .logo{
+    width: 50%;
+    height: 50%;
+    max-height: 90%;
+    max-width: 90%;
+    position: absolute;
+    opacity: 0;
+    -webkit-animation-name: css-animation-fade;
+    animation-name: css-animation-fade;
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+}
+.dota-slider .logo:nth-child(2){
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+.dota-slider .logo:nth-child(3){
+    -webkit-animation-delay: 6s;
+     animation-delay: 6s;
+}
+.dota-slider .logo:nth-child(4){
+    -webkit-animation-delay: 9s;
+     animation-delay: 9s;
+}
+.dota-slider .logo:nth-child(5){
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+}
+
+
+
+@-webkit-keyframes css-animation-fade{
+    from { opacity: 0;}
+    5% { opacity: 1;}
+    15% { opacity: 1;}
+    20% { opacity: 0;}
+    to { opacity: 0;}
+
+
+
+}
+@keyframes css-animation-fade{
+    from { opacity: 0;}
+    5% { opacity: 1;}
+    15% { opacity: 1;}
+    20% { opacity: 0;}
+    to { opacity: 0;}
+
+
+
+}
