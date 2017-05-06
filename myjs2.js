@@ -53,17 +53,37 @@ document.getElementById("demo2").innerHTML = string4;
 // var b = 75;
 // basket("kurama", b); //pass by value
 
-var obj = {
-    car: "mazda",
-    model: 97,
-    color: "red",
-    key: function(){
-        document.write("broom broom");
-    }
-};
-if (obj.color == "red"){
-   obj.key();
+// var obj = {
+//     car: "mazda",
+//     model: 97,
+//     color: "red",
+//     key: function(){
+//         document.write("broom broom");
+//     }
+// };
+
+// if (obj.color == "black"){
+//    obj.key();
+// }
+// else document.write("need to re paint");
+
+// var car = "Hello World";
+
+// gg = car.bold();
+
+// document.write(gg);
+
+
+//var quantity = Math.sqrt(81);
+
+//document.write(quantity);
+
+var timedate = new Date();
+timedate.setFullYear(1997);
+
+var stringdate = timedate.toDateString();
+
+
+    function myfunction() {
+    document.getElementById("demo").innerHTML = (stringdate);
 }
-
-
-
