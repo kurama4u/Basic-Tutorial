@@ -79,7 +79,7 @@ document.getElementById("demo2").innerHTML = string4;
 //document.write(quantity);
 
 var timedate = new Date();
-timedate.setFullYear(1997);
+timedate.setFullYear(2017);
 
 var stringdate = timedate.toDateString();
 
