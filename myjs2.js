@@ -78,12 +78,49 @@ document.getElementById("demo2").innerHTML = string4;
 
 //document.write(quantity);
 
-var timedate = new Date();
-timedate.setFullYear(2017);
+// var timedate = new Date();
+// //timedate.setFullYear(2010);
 
-var stringdate = timedate.toDateString();
+// //var stringdate = timedate.toDateString();
 
 
-    function myfunction() {
-    document.getElementById("demo").innerHTML = (stringdate);
+//     function myfunction() {
+//     document.getElementById("demo").innerHTML = (timedate);
+// }
+function myfunction() {
+    //document.getElementById("demo").style.color = "green";
+    //document.getElementById("demo").style.backgroundColor = "purple";
+    //document.getElementById("demo").style.fontStyle = "italic";
+    //document.getElementById("demo").style.paddingLeft = "50px";
+//     document.getElementById("demo").style.border = "solid purple";
+//     document.getElementById("demo").style.borderWidth = "thin";
+// }
+ //var para = document.getElementsByTagName("p");
+//  para[0].style.fontStyle = "italic";
+//  para[1].style.fontStyle = "italic";
+//  para[2].style.fontStyle = "italic";
+//  para[3].style.fontStyle = "italic";
+// }
+// console.log(para.length);
+// for (var loop = 0; loop < para.length; loop++ ){
+//     para[loop].style.fontStyle = "italic";
+//     console.log (para[loop].innerText.length);
+// }
+//  }
+var whew = document.getElementById("demo").style.backgroundColor = "blue";
+console.log(whew);
+//whew[0].innerHTML = "the lazy";
+//whew[1].innerHTML = "black fox";
+//whew[2].innerHTML = "jumps quick";
+//whew[3].innerHTML = "over the dog";
+
+// whew[4].innerHTML = whew[0].innerHTML + " " + whew[1].innerHTML + " " + whew[2].innerHTML + " " + whew[3].innerHTML;
+//  whew[0].innerHTML = " ";
+//  whew[1].innerHTML = " ";
+//  whew[2].innerHTML = " ";
+//  whew[3].innerHTML = " ";
+
+}
+function malfunction(){
+    document.getElementById("demo").style.backgroundColor = "";
 }
