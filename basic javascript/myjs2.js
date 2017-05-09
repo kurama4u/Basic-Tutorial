@@ -87,7 +87,7 @@ document.getElementById("demo2").innerHTML = string4;
 //     function myfunction() {
 //     document.getElementById("demo").innerHTML = (timedate);
 // }
-function myfunction() {
+
     //document.getElementById("demo").style.color = "green";
     //document.getElementById("demo").style.backgroundColor = "purple";
     //document.getElementById("demo").style.fontStyle = "italic";
@@ -107,8 +107,7 @@ function myfunction() {
 //     console.log (para[loop].innerText.length);
 // }
 //  }
-var whew = document.getElementById("demo").style.backgroundColor = "blue";
-console.log(whew);
+
 //whew[0].innerHTML = "the lazy";
 //whew[1].innerHTML = "black fox";
 //whew[2].innerHTML = "jumps quick";
@@ -119,8 +118,92 @@ console.log(whew);
 //  whew[1].innerHTML = " ";
 //  whew[2].innerHTML = " ";
 //  whew[3].innerHTML = " ";
+// function myfunction() {
+// var whew = document.getElementById("demo").style.backgroundColor = "blue";
+// console.log(whew);
+// }
+// function malfunction(){
+//     document.getElementById("demo").style.backgroundColor = "";
+// // }
+// function myfunction() {
+// document.getElementById("demo").src="php.png";
 
-}
-function malfunction(){
-    document.getElementById("demo").style.backgroundColor = "";
-}
+
+// }
+// function malfunction() {
+// document.getElementById("demo").src="sample logo.png";
+// }
+// function myfunction() {
+//     var H = document.createElement("h2");
+//     var d = document.getElementById("d");
+//     d.appendChild(H);
+//     var textnode1 = document.createTextNode("blah3");
+//     H.appendChild(textnode1);
+
+
+// var para = document.createElement("p");
+// d.appendChild(para);
+// var textnode = document.createTextNode("sahdkjasjkfhajsfahsfjjah kajsfgasfkjagsfkj kjasgfkgasfjka kjhasfjga kjghasjfkg kjgasfk ");
+// para.appendChild(textnode);
+// var exattribute = document.createAttribute("id");
+// exattribute.value = "demo";
+// para.setAttributeNode(exattribute);
+// }
+// function remove(){
+//     var H = document.getElementsByTagName("h2")[2];
+//     var parent = H.parentNode;
+//     parent.removeChild(H);
+//     var P = document.getElementsByTagName("p")[2];
+//     parent.removeChild(P);
+// }
+function validateTextbox() {
+    var box = document.getElementById("name");
+    var box2 = document.getElementById("address");
+    var box3 = document.getElementById("phone");
+    var box4 = document.getElementById("email");
+
+    
+    if (box.value.length < 5 ) {
+        alert("Please enter at least 5 characters on name");
+        box.focus();
+        box.style.border = "solid 3px red";
+    return false;
+    }else {
+        box.style.border = "none";
+    }
+    if (box2.value.length < 5 ) {
+        alert("Please enter at least 5 characters on Address");
+         box2.focus();
+         box2.style.border = "solid 3px red";
+    return false;
+    }else {
+        box2.style.border = "none";
+    }
+
+    if  (box3.value.length < 5 || isNaN(box3.value) ) {
+
+    if  (box3.value.length < 5 ) {
+        alert("Please enter at least 5 characters on phone");
+        box3.focus();
+        box3.style.border = "solid 3px red";
+    return false;
+    }
+    if (isNaN(box3.value)){
+        alert("please enter a number");
+        box3.focus();
+        box3.style.border = "solid 3px red";
+    return false;
+    }
+    }else {
+        box3.style.border = "none";
+    }
+    if (box4.value.length < 5 ) {
+        alert("Please enter at least 5 characters email");
+        box4.focus();
+        box4.style.border = "solid 3px red";
+    return false;
+
+    }else {
+        box4.style.border = "none";
+    }
+    }
