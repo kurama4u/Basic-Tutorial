@@ -155,55 +155,153 @@ document.getElementById("demo2").innerHTML = string4;
 //     parent.removeChild(H);
 //     var P = document.getElementsByTagName("p")[2];
 //     parent.removeChild(P);
-// }
-function validateTextbox() {
-    var box = document.getElementById("name");
-    var box2 = document.getElementById("address");
-    var box3 = document.getElementById("phone");
-    var box4 = document.getElementById("email");
+// // }
+
+
+// VALIDATION FORM
+
+// function validateTextbox() {
+//     var box = document.getElementById("name");
+//     var box2 = document.getElementById("address");
+//     var box3 = document.getElementById("phone");
+//     var box4 = document.getElementById("email");
 
     
-    if (box.value.length < 5 ) {
-        alert("Please enter at least 5 characters on name");
-        box.focus();
-        box.style.border = "solid 3px red";
-    return false;
-    }else {
-        box.style.border = "none";
-    }
-    if (box2.value.length < 5 ) {
-        alert("Please enter at least 5 characters on Address");
-         box2.focus();
-         box2.style.border = "solid 3px red";
-    return false;
-    }else {
-        box2.style.border = "none";
-    }
+//     if (box.value.length < 5 ) {
+//         alert("Please enter at least 5 characters on name");
+//         box.focus();
+//         box.style.border = "solid 3px red";
+//     return false;
+//     }else {
+//         box.style.border = "none";
+//     }
+//     if (box2.value.length < 5 ) {
+//         alert("Please enter at least 5 characters on Address");
+//          box2.focus();
+//          box2.style.border = "solid 3px red";
+//     return false;
+//     }else {
+//         box2.style.border = "none";
+//     }
 
-    if  (box3.value.length < 5 || isNaN(box3.value) ) {
+//     if  (box3.value.length < 5 || isNaN(box3.value) ) {
 
-    if  (box3.value.length < 5 ) {
-        alert("Please enter at least 5 characters on phone");
-        box3.focus();
-        box3.style.border = "solid 3px red";
-    return false;
-    }
-    if (isNaN(box3.value)){
-        alert("please enter a number");
-        box3.focus();
-        box3.style.border = "solid 3px red";
-    return false;
-    }
-    }else {
-        box3.style.border = "none";
-    }
-    if (box4.value.length < 5 ) {
-        alert("Please enter at least 5 characters email");
-        box4.focus();
-        box4.style.border = "solid 3px red";
-    return false;
+//     if  (box3.value.length < 5 ) {
+//         alert("Please enter at least 5 characters on phone");
+//         box3.focus();
+//         box3.style.border = "solid 3px red";
+//     return false;
+//     }
+//     if (isNaN(box3.value)){
+//         alert("please enter a number");
+//         box3.focus();
+//         box3.style.border = "solid 3px red";
+//     return false;
+//     }
+//     }else {
+//         box3.style.border = "none";
+//     }
+//     if (box4.value.length < 5 ) {
+//         alert("Please enter at least 5 characters email");
+//         box4.focus();
+//         box4.style.border = "solid 3px red";
+//     return false;
 
-    }else {
-        box4.style.border = "none";
-    }
-    }
+//     }else {
+//         box4.style.border = "none";
+//     }
+//     }
+// let teacher = function(a, b, lesson){
+//     if (lesson === "subtraction"){
+//         return a- b;
+//     }else if (lesson === "multiply"){
+//     return a* b;
+//     }
+//     else {
+//        return a+ b;
+//     }
+// };
+// console.log(teacher(10, 2, ""))
+
+// let x = function(){
+//     console.log("this is a call back")
+// };
+// let y = function(callback){
+//     console.log("do something");
+//     callback();
+// }
+// y(x);
+// var materials = [
+//   'Hydrogen',
+//   'Helium',
+//   'Lithium',
+//   'Beryllium'
+// ];
+
+// // var materialsLength1 = materials.map(function(material) { 
+// //   return material.length; 
+// // }); // [8,6,7,9]
+// // console.log(materialsLength1);
+// // var materialsLength2 = materials.map((material) => {
+// //   return material.length;
+// // }); // [8,6,7,9]
+// // console.log(materialsLength2);
+
+// var materialsLength3 = materials.map(material => material.length); // [8,6,7,9]
+// console.log(materialsLength3);
+
+//this and bind method
+
+// function talk(){
+//     console.log(this.name)
+// }
+// let kurama = {
+//     lastname: talk,
+//     name: "kurama"
+//    }
+// let amaruk = talk.bind(kurama);
+// kurama.lastname();
+// var x = ['a', 'b', 'c', 'd', 'e'];
+// var y = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+
+
+// console.log('x length is: ' + x.length)
+// console.log( x.indexOf( 'a' ) );
+// console.log( x.indexOf( 'b' ) );
+// console.log( x.indexOf( 'c' ) );
+// console.log( x.indexOf( 'd' ) );
+// console.log( x.indexOf( 'e' ) );
+// console.log( x.indexOf( 'f' ) );
+// console.log( x.indexOf( 'q' ) );
+// console.log( x.indexOf( 'w' ) );
+// console.log( x.indexOf( 'r' ) );
+// console.log( x.indexOf( 't' ) );
+
+// console.log('x length is: ' + y.length)
+// console.log( y.indexOf(0) );
+// console.log( y.indexOf(1) );
+// console.log( y.indexOf(2) );
+// console.log( y.indexOf(3) );
+// console.log( y.indexOf(4) );
+// console.log( y.indexOf(5) );
+// console.log( y.indexOf(6) );
+// console.log( y.indexOf(7) );
+// console.log( y.indexOf(8) );
+// console.log( y.indexOf(9) );
+// console.log( y.indexOf(10));
+// console.log( y.indexOf(11));
+
+
+    var z = [32, 33, 40, 34, 88];
+    var c = [32, 16, 34, 33];
+
+
+    let para1 = z.filter( b => c.indexOf(b) == -1);
+    let para2 = c.filter( d => z.indexOf(d) == -1);
+
+
+
+console.log(qwer);
+console.log([...para1 , ...para2]);
+
